@@ -19,7 +19,7 @@ public class IntroductionProblemSolving {
 		//squareRootOfNum(4);
 		//count();
 		
-		//isPerfectNo();
+		isPerfectNo();
 		
 		//countOfPrimes();
 		
@@ -141,7 +141,7 @@ public class IntroductionProblemSolving {
 	}
 	
 	public static void isPerfectNo() {
-		int n = 2;
+		int n = 6;
 		int temp = 1;
 		for(int i = 2; i*i<=n; i++) { 
 			if(n % i == 0) {  
@@ -269,5 +269,17 @@ public class IntroductionProblemSolving {
 			System.out.println(0);
 		}
 	}
+	public int maxSubArray(final int[] A) {
+        int sum = 0;
+        int ans = Integer.MAX_VALUE;
+        for(int i=0; i<A.length; i++){
+            sum += A[i];
+            ans = Integer.max(ans, sum);
+            if(sum < 0){
+                sum = 0;
+            }
+        }
+        return ans;
+    }
 	
 }

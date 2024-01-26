@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class IntroductionToArrays {
 
 	public static void main(String[] args) {
-		//countGreterNo();
+		countGreterNo();
 		
 		//checkPairs();
 		
@@ -17,12 +17,12 @@ public class IntroductionToArrays {
 		
 		//minTimeSeconds();
 		
-		findSumLtoR();
+		//findSumLtoR();
 	}
 	
 	//Count the number of elements that have at least 1 elements greater than itself
 	public static void countGreterNo() {
-		int A[] = {4,5};
+		int A[] = {4,5,6,7,7};
 		int max = A[0]; // 1
         int count = 1;
         
